@@ -10,10 +10,11 @@ pipeline {
   stages {
     stage('terraform') {
       steps {
-        sh
+        sh '''
             terraform --version
             terraform init
             terraform apply
+         '''
       }
     }  
   }
