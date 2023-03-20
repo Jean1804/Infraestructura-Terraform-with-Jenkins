@@ -7,7 +7,6 @@ pipeline {
         sh '''
             terraform --version
             terraform init
-            terraform plan
             terraform apply -auto-approve -var access_key="AKIA27ZBNVBRH3JRFDHG" -var secret_key="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"
         '''
       }
