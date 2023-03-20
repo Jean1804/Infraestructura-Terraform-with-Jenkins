@@ -3,8 +3,8 @@ pipeline {
 
     environment
     {
-        access_key = "AKIA27ZBNVBRBHPYGJ6P"
-        secret_key = "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"
+      access_key = credentials('Llave_Acceso')
+        secret_key = credentials('Llave_Secreta')
     }
 
   stages {
