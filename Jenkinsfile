@@ -14,7 +14,7 @@ pipeline {
             terraform --version
             terraform init
             terraform plan
-            terraform apply -auto-approve -var access_key=AKIA27ZBNVBRKMTOZYBV -var secret_key=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
+            terraform apply -auto-approve -var access_key="AKIA27ZBNVBRKMTOZYBV" -var secret_key="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"
         '''
       }
     }  
