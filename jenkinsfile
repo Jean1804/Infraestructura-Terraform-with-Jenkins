@@ -3,8 +3,8 @@ pipeline {
 
     environment
     {
-        access_key = "AKIASTO3UJGY2DERDQWH"
-        secret_key = "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"
+        access_key = "AKIA27ZBNVBRDPFRZL6R"
+        secret_key = "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"
     }
 
   stages {
@@ -14,7 +14,7 @@ pipeline {
             terraform --version
             terraform init
             terraform plan
-            terraform apply -auto-approve -var "access_key=${AKIASTO3UJGY2DERDQWH}" -var "secret_key=${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}" 
+            terraform apply -auto-approve -var "access_key=${AKIA27ZBNVBRDPFRZL6R}" -var "secret_key=${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}" 
         '''
       }
     }  
