@@ -3,8 +3,8 @@ pipeline {
 
     environment
     {
-      access_key = credentials('aws_access')
-        secret_key = credentials('secret_key')
+      access_key = AKIA27ZBNVBRKMTOZYBV
+        secret_key = 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
     }
 
   stages {
@@ -14,7 +14,7 @@ pipeline {
             terraform --version
             terraform init
             terraform plan
-            terraform apply  -auto-approve  -var "access_key=${access_key}" -var "secret_key=${secret_key}" 
+            terraform apply  -auto-approve  -var access_key=AKIA27ZBNVBRKMTOZYBV -var secret_key=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
         '''
       }
     }  
